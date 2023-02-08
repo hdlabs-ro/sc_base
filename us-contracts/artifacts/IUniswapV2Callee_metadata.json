@@ -1,0 +1,68 @@
+{
+	"compiler": {
+		"version": "0.5.16+commit.9c3226ce"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "sender",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount0",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "data",
+						"type": "bytes"
+					}
+				],
+				"name": "uniswapV2Call",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"us-contracts/MyFactory.sol": "IUniswapV2Callee"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"us-contracts/MyFactory.sol": {
+			"keccak256": "0xbda9ec731ed2eb0fa72af8099bd0f9c6250301928b5c36e9b92e6ad95150a3d3",
+			"urls": [
+				"bzz-raw://6b093be830ff491d883990685ddb7f2dd5d57fa8213a8d4ff95845c601f4b4ca",
+				"dweb:/ipfs/QmPPKjRoE4Q7xHFAEwGZcQbAUeVjUTAytcSwLRNwgfEoo7"
+			]
+		}
+	},
+	"version": 1
+}

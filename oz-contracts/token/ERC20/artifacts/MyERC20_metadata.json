@@ -1,23 +1,12 @@
 {
 	"compiler": {
-		"version": "0.8.6+commit.11564f7e"
+		"version": "0.8.18+commit.87f61d96"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "name_",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "symbol_",
-						"type": "string"
-					}
-				],
+				"inputs": [],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
 			},
@@ -329,6 +318,14 @@
 			}
 		],
 		"devdoc": {
+			"events": {
+				"Approval(address,address,uint256)": {
+					"details": "Emitted when the allowance of a `spender` for an `owner` is set by a call to {approve}. `value` is the new allowance."
+				},
+				"Transfer(address,address,uint256)": {
+					"details": "Emitted when `value` tokens are moved from one account (`from`) to another (`to`). Note that `value` may be zero."
+				}
+			},
 			"kind": "dev",
 			"methods": {
 				"allowance(address,address)": {
@@ -369,9 +366,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"oz-contracts/token/ERC20/MyERC20.sol": "MyERC20"
+			"oz-contracts/token/ERC20/ERC-20-RONT.sol": "MyERC20"
 		},
-		"evmVersion": "berlin",
+		"evmVersion": "paris",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -383,20 +380,20 @@
 		"remappings": []
 	},
 	"sources": {
+		"oz-contracts/token/ERC20/ERC-20-RONT.sol": {
+			"keccak256": "0x67cac83c529424934175aa16193b95e815a6f466b9ebf3648554f1a4522fac29",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://04254f9bcaa277e9bca4e1207856ed65a73ca80ecaa19df69011260daaa9b3e9",
+				"dweb:/ipfs/QmUnqG9u9fbwc3ceU3RwHiPGG5A1oM8UWej6Y27QmFa1Md"
+			]
+		},
 		"oz-contracts/token/ERC20/IERC20.sol": {
 			"keccak256": "0x00c839ff53d07d19db2e7cfa1e5133f9ee90a8d64b0e2e57f50446a2d1a3a0e0",
 			"license": "MIT",
 			"urls": [
 				"bzz-raw://3dac621d015a68a5251b1e5d41dda0faf252699bf6e8bcf46a958b29964d9dd1",
 				"dweb:/ipfs/QmP9axjgZv4cezAhALoTemM62sdLtMDJ9MGTxECnNwHgSJ"
-			]
-		},
-		"oz-contracts/token/ERC20/MyERC20.sol": {
-			"keccak256": "0x17d73350e8830494f25cb1296dd5c120aaaf78a33cec262eadbb203975f28a1a",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://d09e672e3717470f00153fdd280c2b405a76dbcee479aab60f8933c0f4954f54",
-				"dweb:/ipfs/QmV9o7yxWWDxiYBmohmg4SkkuqRUXZqkG5h7rbLegPnCMQ"
 			]
 		},
 		"oz-contracts/token/ERC20/extensions/IERC20Metadata.sol": {
