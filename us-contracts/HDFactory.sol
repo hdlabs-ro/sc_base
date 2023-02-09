@@ -6,15 +6,15 @@ import "./ILog.sol";
 contract HDFactory is ILog {
     address public feeTo;
     address public feeToSetter;
-    address token0 = 0xd9145CCE52D386f254917e481eB44e9943F39138; //RONT contract
-    address token1 = 0xd8b934580fcE35a11B58C6D73aDeE468a2833fa8; //USDT contract
+    address token0 = 0xD0DA387609Adc13779badAf1315a4904CD40976E; //RONT contract
+    address token1 = 0xD1F9C3397ea04D3dE7F002cB9e63cb49d0DEAA36; //USDT contract
 
     mapping(address => mapping(address => address)) public getPair;
     address[] public allPairs;
 
     constructor(address _feeToSetter) {
         feeToSetter = _feeToSetter;
-        address pair = 0xD7ACd2a9FD159E69Bb102A1ca21C9a3e3A5F771B;
+        address pair = 0x3f7E06A4f8061B0389fe0551a2e33376f2BA02ee;
         allPairs.push(pair);
 
         getPair[token0][token1] = pair;

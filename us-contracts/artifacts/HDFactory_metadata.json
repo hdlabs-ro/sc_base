@@ -208,11 +208,11 @@
 	},
 	"sources": {
 		"GoWorkspace/github.com/hdlabs-ro/sc_base/us-contracts/HDFactory.sol": {
-			"keccak256": "0x9bcecace9e33ab30356433a6c53c48392330bd012cb5ee0139142bbe75ccac53",
+			"keccak256": "0xf3c2ff7a25cb0644812a3d95dcb82a3a98b48e967b68f944d5308127aa36a328",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://0e3744a9f79a61b7257db862366326a8ddb488d46f71735122bf8b06f0c9b69c",
-				"dweb:/ipfs/QmZWnAi3arc7nq4MRkuF8ehQrD7FsuagesEysSwC4rEbCm"
+				"bzz-raw://b1c42cc574367dcca6fc1af3b7f723a77ee45c626519468b5b4e8edc2017d3a7",
+				"dweb:/ipfs/Qmd5DQkr9ZJjNvP774ikMSzvYnp6cyDxgAbYkSK6Hq8b6g"
 			]
 		},
 		"GoWorkspace/github.com/hdlabs-ro/sc_base/us-contracts/ILog.sol": {

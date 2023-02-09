@@ -538,11 +538,11 @@
 			]
 		},
 		"GoWorkspace/github.com/hdlabs-ro/sc_base/us-contracts/PairUsdtRont.sol": {
-			"keccak256": "0xc8fe4a3468e861fedd1ed7646017c4c0245cb12e48d498675565de12c2835abd",
+			"keccak256": "0xe0b784379908e64fddf2d7f1a83cc8414f477e131b1f025d68c4f6bb0606fe02",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c21b5ed3adb733d50a4521b7ea48322e04a0944de24a28a842288d15e6befcfb",
-				"dweb:/ipfs/QmPX2czqkfGDEwPHBFqyU9sGkuMgSSqb85G3cqCLu3BwUY"
+				"bzz-raw://d69955ca11f02cae6a5c43f9c8a319b95c430c74f7cf9ff898ad4c5ba204833a",
+				"dweb:/ipfs/QmUmeWQeZ54bq2mVZeNDRa5gQXGreKf65iQHYA4bQz3UHv"
 			]
 		}
 	},

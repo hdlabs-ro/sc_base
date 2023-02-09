@@ -16,11 +16,11 @@ contract MyRouterV2 {
     }
 
     constructor() {
-        factory = 0x9D7f74d0C41E726EC95884E0e97Fa6129e3b5E99;
-        WETH = 0xf8e81D47203A594245E36C48e151709F0C19fBe8;
-        RONT = 0xd9145CCE52D386f254917e481eB44e9943F39138;
-        USDT = 0xd8b934580fcE35a11B58C6D73aDeE468a2833fa8;
-        ourPair = 0xD7ACd2a9FD159E69Bb102A1ca21C9a3e3A5F771B;
+        factory = 0x3C16cf6cC170A4A5C1fd82490F21bb01F9682c38;
+        WETH = 0xFce02B33a21b8DCd5073Ab42b4B80F4f002ea77b;
+        RONT = 0xD0DA387609Adc13779badAf1315a4904CD40976E;
+        USDT = 0xD1F9C3397ea04D3dE7F002cB9e63cb49d0DEAA36;
+        ourPair = 0x3f7E06A4f8061B0389fe0551a2e33376f2BA02ee;
     }
 
     receive() external payable {
@@ -488,9 +488,9 @@ contract MyRouterV2 {
         address tokenB
     ) internal pure returns (address pair) {
         (address token0, address token1) = _sortTokens(tokenA, tokenB);
-        address _RONT = 0xd9145CCE52D386f254917e481eB44e9943F39138;
-        address _USDT = 0xd8b934580fcE35a11B58C6D73aDeE468a2833fa8;
-        address _ourPair = 0xD7ACd2a9FD159E69Bb102A1ca21C9a3e3A5F771B;
+        address _RONT = 0xD0DA387609Adc13779badAf1315a4904CD40976E;
+        address _USDT = 0xD1F9C3397ea04D3dE7F002cB9e63cb49d0DEAA36;
+        address _ourPair = 0x3f7E06A4f8061B0389fe0551a2e33376f2BA02ee;
         if ((tokenA == _RONT || tokenA == _USDT) && (tokenB == _RONT || tokenB == _USDT)) {
             return _ourPair;
         }

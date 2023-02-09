@@ -7,8 +7,8 @@ import "./IERC.sol";
 contract PairUsdtRont is ILog {
     //
     address feeTo = 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4;
-    address public token0 = 0xd9145CCE52D386f254917e481eB44e9943F39138; //RONT contract
-    address public token1 = 0xd8b934580fcE35a11B58C6D73aDeE468a2833fa8; //USDT contract
+    address public token0 = 0xD0DA387609Adc13779badAf1315a4904CD40976E; //RONT contract
+    address public token1 = 0xD1F9C3397ea04D3dE7F002cB9e63cb49d0DEAA36; //USDT contract
 
     string public constant name = "ERC Uniswap V2";
     string public constant symbol = "ERC UNI-V2";

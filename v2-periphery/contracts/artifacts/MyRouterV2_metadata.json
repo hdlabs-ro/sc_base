@@ -1041,11 +1041,11 @@
 			]
 		},
 		"GoWorkspace/github.com/hdlabs-ro/sc_base/v2-periphery/contracts/MyRouterV2.sol": {
-			"keccak256": "0xa157dc829516bbe056652f6ec5c3993a33643c122a877d5c85957c33ddacc27f",
+			"keccak256": "0x35a1b1d053bd93c09d88a878ba9f908e84b49cb956799c7393b081541b7293cf",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3d88e515cdbcbed79e759b967096e154dbbd9b05f69e7f6d6eb7a0a8ceb006b4",
-				"dweb:/ipfs/QmVsUW8qekpdpA3G39cBpCqUacTCTDZht4Ruj4SX84KYfQ"
+				"bzz-raw://393e8b2ee2ea7797069e4aad46c702e81b925603050b40243c5139a9170761ff",
+				"dweb:/ipfs/QmRijoekAeovyM8z1rPg4K5BAzopL21XjxSaFSKA2A48et"
 			]
 		}
 	},
