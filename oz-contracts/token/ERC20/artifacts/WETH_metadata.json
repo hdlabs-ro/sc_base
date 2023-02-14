@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.18+commit.87f61d96"
+		"version": "0.8.17+commit.8df45f5f"
 	},
 	"language": "Solidity",
 	"output": {
@@ -39,13 +39,76 @@
 				"anonymous": false,
 				"inputs": [
 					{
-						"indexed": true,
+						"indexed": false,
 						"internalType": "string",
-						"name": "msg",
+						"name": "key",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "value",
+						"type": "address"
+					}
+				],
+				"name": "LogAddress",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "key",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "int256",
+						"name": "value",
+						"type": "int256"
+					}
+				],
+				"name": "LogInt",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "key",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "value",
 						"type": "string"
 					}
 				],
-				"name": "Log",
+				"name": "LogString",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "key",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "LogUint256",
 				"type": "event"
 			},
 			{
@@ -295,17 +358,6 @@
 			}
 		],
 		"devdoc": {
-			"events": {
-				"Approval(address,address,uint256)": {
-					"details": "Emitted when the allowance of a `spender` for an `owner` is set by a call to {approve}. `value` is the new allowance."
-				},
-				"Log(string)": {
-					"details": "Developer dev only messages"
-				},
-				"Transfer(address,address,uint256)": {
-					"details": "Emitted when `value` tokens are moved from one account (`from`) to another (`to`). Note that `value` may be zero."
-				}
-			},
 			"kind": "dev",
 			"methods": {
 				"allowance(address,address)": {
@@ -348,7 +400,7 @@
 		"compilationTarget": {
 			"GoWorkspace/github.com/hdlabs-ro/sc_base/oz-contracts/token/ERC20/WETH.sol": "WETH"
 		},
-		"evmVersion": "paris",
+		"evmVersion": "london",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -369,19 +421,19 @@
 			]
 		},
 		"GoWorkspace/github.com/hdlabs-ro/sc_base/oz-contracts/token/ERC20/ILog.sol": {
-			"keccak256": "0x8163ee1695f8e513ca6a008b77198a49c3a465386c954e87add24463fc5cb269",
+			"keccak256": "0x829a3a95aab6e24a08b1da7f092a7ef65bacca1eb51eec33c2878f67bd8225be",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://8517d96a308addbb8aa84e2891c3020f3304aabb1471eaf740369b342c758451",
-				"dweb:/ipfs/QmeWaf6kbYXmBiwFZWC5WKR9eMeWgXijCeoSRhJKARV6LW"
+				"bzz-raw://14805ea46202e6977f03791b872841fb1975dfc5922a9083fb39997590432269",
+				"dweb:/ipfs/QmR9TyQymXPjTErBihjhzpuAhBnJ5cubnVdpcjDcQZwu4Z"
 			]
 		},
 		"GoWorkspace/github.com/hdlabs-ro/sc_base/oz-contracts/token/ERC20/WETH.sol": {
-			"keccak256": "0x7ac8ad8017204fd6d1876cea6150ef8da0ca2e3a62bec39982fde010e8612047",
+			"keccak256": "0xf554c2c6981431814f259aaa6eb2920e26830123daeeab11f44538f6180ab0a4",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://7f4c69fb1932198ad18870ad0d62c4bdb756b75a1a4eb68ddf161bf29709b378",
-				"dweb:/ipfs/QmcpgpYUf2r5t376jmuzvnQMBwFzBRXtgW3T8BTsFX4ynk"
+				"bzz-raw://b6b23180a846450ccb1df19d2701528b049c947cb4c8d6db9a88bb8c2a06de3d",
+				"dweb:/ipfs/QmQgnPZBAsoBKEbyLpcLjxxC4kaGzX2FovVNmSd75tFFi4"
 			]
 		},
 		"GoWorkspace/github.com/hdlabs-ro/sc_base/oz-contracts/token/ERC20/extensions/IERC20Metadata.sol": {

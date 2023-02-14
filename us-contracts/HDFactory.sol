@@ -29,6 +29,9 @@ contract HDFactory is ILog {
         external
         returns (address pair)
     {
+         emit LogAddress("HDFactory.createPair.owner(sender)",owner);
+          emit LogAddress("HDFactory.createPair.owner(sender)",owner);
+
         require(tokenA != tokenB, "UniswapV2: IDENTICAL_ADDRESSES");
         (token0, token1) = tokenA < tokenB
             ? (tokenA, tokenB)
@@ -38,9 +41,6 @@ contract HDFactory is ILog {
             getPair[token0][token1] == address(0),
             "UniswapV2: PAIR_EXISTS"
         ); // single check is sufficient
-        emit Log(
-            "factory createPair called with no results, pairs are predefined"
-        );
         return getPair[token1][token0];
     }
 

@@ -596,7 +596,10 @@ contract MyRouterV2 {
     }
 
     function safeTransferETH(address to, uint256 value) internal {
-        (bool success, ) = to.call{value: value}(new bytes(0));
+        //As they say but it was not working
+        //(bool success, ) = to.call{value: value}(new bytes(0));
+        //as we try
+        bool success = to.transfer(value);
         require(success, 'TransferHelper::safeTransferETH: ETH transfer failed');
     }
 }

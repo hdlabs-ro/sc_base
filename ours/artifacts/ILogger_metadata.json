@@ -1,0 +1,74 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "file",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "method",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "key",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "message",
+						"type": "string"
+					}
+				],
+				"name": "LogString",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"GoWorkspace/github.com/hdlabs-ro/sc_base/ours/TestLogger.sol": "ILogger"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"GoWorkspace/github.com/hdlabs-ro/sc_base/ours/TestLogger.sol": {
+			"keccak256": "0x5f9b5ce17076c95ac117944671d4c44e5cb777d521cd168ea7ade38f79fc6e99",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://cdde1a9ea8fec38abf5102b60106652a1bd77248c477f339d51aaca2a1f8cf38",
+				"dweb:/ipfs/QmTnyQ6psZ8vJsN36wMaUpSwQWjABj2ZMrXaYghoyTAW38"
+			]
+		}
+	},
+	"version": 1
+}

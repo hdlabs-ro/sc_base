@@ -1,0 +1,127 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "key",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "value",
+						"type": "address"
+					}
+				],
+				"name": "LogAddress",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "key",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "int256",
+						"name": "value",
+						"type": "int256"
+					}
+				],
+				"name": "LogInt",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "key",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "value",
+						"type": "string"
+					}
+				],
+				"name": "LogString",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "key",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "LogUint256",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"events": {
+				"LogString(string,string)": {
+					"details": "Developer dev only messages"
+				}
+			},
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"GoWorkspace/github.com/hdlabs-ro/sc_base/oz-contracts/token/ERC20/ILog.sol": "ILog"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"GoWorkspace/github.com/hdlabs-ro/sc_base/oz-contracts/token/ERC20/ILog.sol": {
+			"keccak256": "0x829a3a95aab6e24a08b1da7f092a7ef65bacca1eb51eec33c2878f67bd8225be",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://14805ea46202e6977f03791b872841fb1975dfc5922a9083fb39997590432269",
+				"dweb:/ipfs/QmR9TyQymXPjTErBihjhzpuAhBnJ5cubnVdpcjDcQZwu4Z"
+			]
+		}
+	},
+	"version": 1
+}

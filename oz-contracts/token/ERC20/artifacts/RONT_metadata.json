@@ -39,13 +39,76 @@
 				"anonymous": false,
 				"inputs": [
 					{
-						"indexed": true,
+						"indexed": false,
 						"internalType": "string",
-						"name": "msg",
+						"name": "key",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "value",
+						"type": "address"
+					}
+				],
+				"name": "LogAddress",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "key",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "int256",
+						"name": "value",
+						"type": "int256"
+					}
+				],
+				"name": "LogInt",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "key",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "value",
 						"type": "string"
 					}
 				],
-				"name": "Log",
+				"name": "LogString",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "key",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "LogUint256",
 				"type": "event"
 			},
 			{
@@ -299,9 +362,6 @@
 				"Approval(address,address,uint256)": {
 					"details": "Emitted when the allowance of a `spender` for an `owner` is set by a call to {approve}. `value` is the new allowance."
 				},
-				"Log(string)": {
-					"details": "Developer dev only messages"
-				},
 				"Transfer(address,address,uint256)": {
 					"details": "Emitted when `value` tokens are moved from one account (`from`) to another (`to`). Note that `value` may be zero."
 				}
@@ -368,20 +428,12 @@
 				"dweb:/ipfs/QmP9axjgZv4cezAhALoTemM62sdLtMDJ9MGTxECnNwHgSJ"
 			]
 		},
-		"GoWorkspace/github.com/hdlabs-ro/sc_base/oz-contracts/token/ERC20/ILog.sol": {
-			"keccak256": "0x8163ee1695f8e513ca6a008b77198a49c3a465386c954e87add24463fc5cb269",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://8517d96a308addbb8aa84e2891c3020f3304aabb1471eaf740369b342c758451",
-				"dweb:/ipfs/QmeWaf6kbYXmBiwFZWC5WKR9eMeWgXijCeoSRhJKARV6LW"
-			]
-		},
 		"GoWorkspace/github.com/hdlabs-ro/sc_base/oz-contracts/token/ERC20/RONT.sol": {
-			"keccak256": "0x1e18827f45dc0c017640690840de3ae4767210198965edfcc3539aee0a66cb9b",
+			"keccak256": "0x3c4849422416b71fd2456205fd1bae8b26032b123908ead4dfc93810f8d6ee3c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://20a53235b42455dbcca192c14d176a23dae25ab73761cbe316377e41e3527c1a",
-				"dweb:/ipfs/QmbosbCvTgUUKT2CEHbN1RnJ8ZVzbehEyi9CsjznL8mKt6"
+				"bzz-raw://8d3c6e68ba9857e8c3cbad14e38ff6c2e119eb7fd32e909a37371209a7200c2b",
+				"dweb:/ipfs/QmWLg1o6b53ynRqMkkwmdF6wrBnCYgm1oPcFKcYpXBvz7u"
 			]
 		},
 		"GoWorkspace/github.com/hdlabs-ro/sc_base/oz-contracts/token/ERC20/extensions/IERC20Metadata.sol": {

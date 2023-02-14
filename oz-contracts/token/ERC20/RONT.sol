@@ -2,24 +2,28 @@
 pragma solidity ^0.8.0;
 
 import "./IERC20.sol";
-import "./ILog.sol";
 import "./extensions/IERC20Metadata.sol";
 import "../../utils/Context.sol";
 
-contract RONT is Context, IERC20, IERC20Metadata, ILog {
+contract RONT is Context, IERC20, IERC20Metadata {
+
     mapping(address => uint256) private _balances;
     mapping(address => mapping(address => uint256)) private _allowances;
     uint256 private _totalSupply;
     string private _name;
     string private _symbol;
 
+    event LogString(string key,string value);
+    event LogInt(string key,int value);
+    event LogUint256(string key,uint256 value);
+    event LogAddress(string key,address value);
+    
     constructor() {
         address owner = _msgSender();
         _name = "RONT Token";
         _symbol = "RONT";
         _totalSupply += 1000000000000000000000000; //1M
-        _balances[owner] += 100000000000000000000; //100
-        emit Log("RONT token contract created");
+        _balances[owner] += 500000000000000000000; //500
     }
 
     //GETTERS
@@ -67,6 +71,9 @@ contract RONT is Context, IERC20, IERC20Metadata, ILog {
         returns (bool)
     {
         address owner = _msgSender();
+        emit LogAddress(string.concat(_symbol, ".transfer.owner(sender)"),owner);
+        emit LogAddress(string.concat(_symbol, ".transfer.to"),to);
+        emit LogUint256(string.concat(_symbol, ".transfer.amount"),amount);        
         _transfer(owner, to, amount);
         return true;
     }
@@ -78,6 +85,9 @@ contract RONT is Context, IERC20, IERC20Metadata, ILog {
         returns (bool)
     {
         address owner = _msgSender();
+        emit LogAddress(string.concat(_symbol, ".approve.owner(sender)"),owner);
+        emit LogAddress(string.concat(_symbol, ".approve.spender"),spender);
+        emit LogUint256(string.concat(_symbol, ".approve.amount"),amount);          
         _approve(owner, spender, amount);
         return true;
     }
@@ -88,6 +98,10 @@ contract RONT is Context, IERC20, IERC20Metadata, ILog {
         uint256 amount
     ) public virtual override returns (bool) {
         address spender = _msgSender();
+        emit LogAddress(string.concat(_symbol, ".transferFrom.spender(sender)"),spender);
+        emit LogAddress(string.concat(_symbol, ".transferFrom.from"),from);
+        emit LogAddress(string.concat(_symbol, ".transferFrom.to"),to);
+        emit LogUint256(string.concat(_symbol, ".transferFrom.amount"),amount);           
         _spendAllowance(from, spender, amount);
         _transfer(from, to, amount);
         return true;
@@ -99,6 +113,9 @@ contract RONT is Context, IERC20, IERC20Metadata, ILog {
         returns (bool)
     {
         address owner = _msgSender();
+        emit LogAddress(string.concat(_symbol, ".increaseAllowance.owner(sender)"),owner);
+        emit LogAddress(string.concat(_symbol, ".increaseAllowance.spender"),spender);
+        emit LogUint256(string.concat(_symbol, ".increaseAllowance.addedValue"),addedValue);          
         _approve(owner, spender, allowance(owner, spender) + addedValue);
         return true;
     }
@@ -109,6 +126,9 @@ contract RONT is Context, IERC20, IERC20Metadata, ILog {
         returns (bool)
     {
         address owner = _msgSender();
+        emit LogAddress(string.concat(_symbol, ".increaseAllowance.owner(sender)"),owner);
+        emit LogAddress(string.concat(_symbol, ".increaseAllowance.spender"),spender);
+        emit LogUint256(string.concat(_symbol, ".increaseAllowance.subtractedValue"),subtractedValue);   
         uint256 currentAllowance = allowance(owner, spender);
         require(
             currentAllowance >= subtractedValue,
@@ -127,6 +147,9 @@ contract RONT is Context, IERC20, IERC20Metadata, ILog {
         address to,
         uint256 amount
     ) internal virtual {
+        emit LogAddress(string.concat(_symbol, "._transfer.from"),from);
+        emit LogAddress(string.concat(_symbol, "._transfer.to"),to);
+        emit LogUint256(string.concat(_symbol, "._transfer.amount"),amount);        
         require(from != address(0), "ERC20: transfer from the zero address");
         require(to != address(0), "ERC20: transfer to the zero address");
         uint256 fromBalance = _balances[from];
@@ -146,6 +169,9 @@ contract RONT is Context, IERC20, IERC20Metadata, ILog {
         address spender,
         uint256 amount
     ) internal virtual {
+        emit LogAddress(string.concat(_symbol, "._approve.owner"),owner);
+        emit LogAddress(string.concat(_symbol, "._approve.spender"),spender);
+        emit LogUint256(string.concat(_symbol, "._approve.amount"),amount);          
         require(owner != address(0), "ERC20: approve from the zero address");
         require(spender != address(0), "ERC20: approve to the zero address");
         _allowances[owner][spender] = amount;
@@ -157,6 +183,9 @@ contract RONT is Context, IERC20, IERC20Metadata, ILog {
         address spender,
         uint256 amount
     ) internal virtual {
+        emit LogAddress(string.concat(_symbol, "._spendAllowance.owner"),owner);
+        emit LogAddress(string.concat(_symbol, "._spendAllowance.spender"),spender);
+        emit LogUint256(string.concat(_symbol, "._spendAllowance.amount"),amount);          
         uint256 currentAllowance = allowance(owner, spender);
         if (currentAllowance != type(uint256).max) {
             require(

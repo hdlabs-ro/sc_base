@@ -1,0 +1,140 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "key",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "value",
+						"type": "address"
+					}
+				],
+				"name": "LogAddress",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "key",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "int256",
+						"name": "value",
+						"type": "int256"
+					}
+				],
+				"name": "LogInt",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "key",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "value",
+						"type": "string"
+					}
+				],
+				"name": "LogString",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "key",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "LogUint256",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "Demo",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"GoWorkspace/github.com/hdlabs-ro/sc_base/ours/Logger.sol": "Logger"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"GoWorkspace/github.com/hdlabs-ro/sc_base/ours/Logger.sol": {
+			"keccak256": "0xc47b116ddfda1c0bba035d5dde10bf0c7806b349efdd7c1887ed37ba997e472b",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://22532b3c7fa17fb6bf2614909f8d8762496c0252ca53475219f1fab83cee6f5f",
+				"dweb:/ipfs/QmeCzFLAfJmeHe2CvstPeAnimersY9m5cvgUAci5i6SWhK"
+			]
+		}
+	},
+	"version": 1
+}

@@ -22,6 +22,120 @@
 				"type": "constructor"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "key",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "value",
+						"type": "address"
+					}
+				],
+				"name": "LogAddress",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "key",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "int256",
+						"name": "value",
+						"type": "int256"
+					}
+				],
+				"name": "LogInt",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "key",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "value",
+						"type": "string"
+					}
+				],
+				"name": "LogString",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "key",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "LogUint",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "key",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint112",
+						"name": "value",
+						"type": "uint112"
+					}
+				],
+				"name": "LogUint112",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "key",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "LogUint256",
+				"type": "event"
+			},
+			{
 				"inputs": [],
 				"name": "WETH",
 				"outputs": [
@@ -986,7 +1100,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"GoWorkspace/github.com/hdlabs-ro/sc_base/v2-periphery/contracts/UniswapV2Router02.sol": "UniswapV2Router02"
+			"GoWorkspace/github.com/hdlabs-ro/sc_base/v2-periphery/contracts/V2Router02.sol": "UniswapV2Router02"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -1021,11 +1135,11 @@
 				"dweb:/ipfs/QmayKQWJgWmr46DqWseADyUanmqxh662hPNdAkdHRjiQQH"
 			]
 		},
-		"GoWorkspace/github.com/hdlabs-ro/sc_base/v2-periphery/contracts/UniswapV2Router02.sol": {
-			"keccak256": "0xb954cedec2552e286cbdf61d72e91affec2447636007c3ebd7194741157f48c8",
+		"GoWorkspace/github.com/hdlabs-ro/sc_base/v2-periphery/contracts/V2Router02.sol": {
+			"keccak256": "0x91c9cae9357f928cfc231390b29722d1288acf15ed6fa915ab7adf2b4bffd767",
 			"urls": [
-				"bzz-raw://b9d5ccc48737414de4a2298791b322f2b8be48ba4359ce0f594f35613c998979",
-				"dweb:/ipfs/QmcdQjcuUZ5DsD8vagwSRKZYYUP9df1F9QoAnkENnpUJjc"
+				"bzz-raw://938f96fc992e9fac83419818f38290b97601ebcc15a35d2528ba77a420284110",
+				"dweb:/ipfs/QmPDJ2H9TiDLojxL1C46GFDUqcP3nbSZuVLo3X77P527wq"
 			]
 		},
 		"GoWorkspace/github.com/hdlabs-ro/sc_base/v2-periphery/contracts/interfaces/IERC20.sol": {
