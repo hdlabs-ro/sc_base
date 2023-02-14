@@ -1,9 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import "./ILog.sol";
-
-contract HDFactory is ILog {
+contract HDFactory {
     address public feeTo;
     address public feeToSetter;
     address token0 = 0xD0DA387609Adc13779badAf1315a4904CD40976E; //RONT contract
@@ -29,9 +27,6 @@ contract HDFactory is ILog {
         external
         returns (address pair)
     {
-         emit LogAddress("HDFactory.createPair.owner(sender)",owner);
-          emit LogAddress("HDFactory.createPair.owner(sender)",owner);
-
         require(tokenA != tokenB, "UniswapV2: IDENTICAL_ADDRESSES");
         (token0, token1) = tokenA < tokenB
             ? (tokenA, tokenB)

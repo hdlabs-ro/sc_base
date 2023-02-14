@@ -11,32 +11,6 @@
 				"type": "constructor"
 			},
 			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": true,
-						"internalType": "string",
-						"name": "msg",
-						"type": "string"
-					}
-				],
-				"name": "Log",
-				"type": "event"
-			},
-			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": true,
-						"internalType": "bytes",
-						"name": "msg",
-						"type": "bytes"
-					}
-				],
-				"name": "LogBytes",
-				"type": "event"
-			},
-			{
 				"inputs": [],
 				"name": "DOMAIN_SEPARATOR",
 				"outputs": [
@@ -490,11 +464,6 @@
 			}
 		],
 		"devdoc": {
-			"events": {
-				"Log(string)": {
-					"details": "Developer dev only messages"
-				}
-			},
 			"kind": "dev",
 			"methods": {},
 			"version": 1
@@ -529,20 +498,12 @@
 				"dweb:/ipfs/QmbNpyTcmozPQ9e8H3995y31yeFG7wQz1KZ3NCMr8XSitH"
 			]
 		},
-		"GoWorkspace/github.com/hdlabs-ro/sc_base/us-contracts/ILog.sol": {
-			"keccak256": "0x67778e241da270d3f423fde352d1970fac791c8fcdad892af2606affb72af7c8",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://964c5de6a68cc1669b3f240ecd356901f0d7d5738085cd3c6c0aafe7c81e1d06",
-				"dweb:/ipfs/QmVhA9iXeBKvRFSumwFo7LAkyFUbXiqofHY7pA9Ggq8azD"
-			]
-		},
 		"GoWorkspace/github.com/hdlabs-ro/sc_base/us-contracts/PairUsdtRont.sol": {
-			"keccak256": "0xe0b784379908e64fddf2d7f1a83cc8414f477e131b1f025d68c4f6bb0606fe02",
+			"keccak256": "0x79c5924e0d40cf59559c4f6a930e11b12a9696bc51355530126f970da3acfb20",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d69955ca11f02cae6a5c43f9c8a319b95c430c74f7cf9ff898ad4c5ba204833a",
-				"dweb:/ipfs/QmUmeWQeZ54bq2mVZeNDRa5gQXGreKf65iQHYA4bQz3UHv"
+				"bzz-raw://f71dd19fdb0d7157a0782a092ebc5d2d02e98b10670919dd5055bd42fd69266e",
+				"dweb:/ipfs/QmdwGjhEJ3i4K3DSnJjCxDR1uzbCMZwRZ7QZVvC9nqattc"
 			]
 		}
 	},

@@ -1,12 +1,11 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import "./ILog.sol";
 import "./IERC.sol";
 
-contract PairUsdtRont is ILog {
+contract PairUsdtRont {
     //
-    address feeTo = 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4;
+    address feeTo = 0x3Fa65b449490b1d70d0b195a2679154aA26d1642;
     address public token0 = 0xD0DA387609Adc13779badAf1315a4904CD40976E; //RONT contract
     address public token1 = 0xD1F9C3397ea04D3dE7F002cB9e63cb49d0DEAA36; //USDT contract
 
@@ -59,7 +58,6 @@ contract PairUsdtRont is ILog {
                 address(this)
             )
         );
-        emit Log("Pair USDT-RONT contract created");
     }
 
     function getReserves()
@@ -149,8 +147,6 @@ contract PairUsdtRont is ILog {
             amount0Out < _reserve0 && amount1Out < _reserve1,
             "PairUsdtRont: INSUFFICIENT_LIQUIDITY"
         );
-
-        emit LogBytes(data);
 
         uint256 balance0;
         uint256 balance1;
